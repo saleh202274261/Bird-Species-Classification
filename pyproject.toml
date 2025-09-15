@@ -1,0 +1,20 @@
+[project]
+name = "bird-project"
+version = "0.1.0"
+description = "Bird species recognition (EfficientNet + TensorFlow)"
+requires-python = ">=3.9"
+
+dependencies = [
+    "tensorflow>=2.13.0",
+    "tensorflow-io-gcs-filesystem==0.31.0",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "opencv-python",
+    "pillow",
+    "jupyterlab",
+    "tqdm",
+   
+]
