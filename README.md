@@ -14,12 +14,11 @@ Key Features:
 
 Team Information
 
-| AC.NO        | Name                     | Role                        | Contributions |
-|--------------|--------------------------|-----------------------------|---------------|
-| 202274261    | [Saleh ahmed alhowat]    | Data analysis               | Data processing  |
-| 202174374    | [waleed yahya al_sharafi]| ML Engineer                 |  Model architecture   
-|                                                                           and training  |
-| 202073349    | [taha ahmed alqutami]     | Frontend Developer         | GUI implementation, and |     |                                                                   data visulization |
+| AC.NO        | Name                     | Role                 | Contributions |
+|--------------|--------------------------|----------------------|---------------|
+| 202274261    | [Saleh ahmed alhowat]    | Data analysis        | Data processing and preparing    |
+| 202174374    | [waleed yahya al_sharafi]| ML Engineer          |  Model architectureand training  |
+| 202073349    | [taha ahmed alqutami]    | Frontend Developer   |GUI implementation and data visulization |
 
 
 
@@ -49,25 +48,25 @@ uv run python main.py
 Project Structure
 
 
-bird-species-classification/
-├── README.md              # Project documentation
-├── pyproject.toml         # UV project configuration
-├── .python-version          # Python version specification
-├── .gitignore               # Git ignore rules
-├── main.py               # Main application entry point
-├── src/                  # Source code
-│   ├── data_processing.py # Data processing modules
-│   ├── model_training.py  # ML model implementations
-│   ├── model_evaluation.py # Model evaluation
-│   ├── prediction.py      # Prediction functions
-│   └── gui.py            # GUI implementation
-├── models/                  # Saved models directory
-│   ├── best_model.h5        # Best trained model (created after training)
-│   ├── class_names.txt      # Saved class names (created after training)
-│   └── training_info.txt    # Training metrics (created after training)
-├── notebooks/            # Jupyter notebooks
-├── data/                # Dataset files
-└── docs/                # Additional documentation
+```bird-species-classification/
+├── README.md              
+├── pyproject.toml         
+├── .python-version        
+├── .gitignore             
+├── main.py               
+├── src/                  
+│   ├── data_processing.py 
+│   ├── model_training.py  
+│   ├── model_evaluation.py
+│   ├── prediction.py      
+│   └── gui.py            
+├── models/                
+│   ├── best_model.h5      
+│   ├── class_names.txt    
+│   └── training_info.txt  
+├── notebooks/            
+├── data/                
+└── docs/ ```               
 
 
 Usage
@@ -87,6 +86,9 @@ model_trainer = ModelTrainer()
 model, history, training_time, best_accuracy = model_trainer.train_model(
     train_generator, validation_generator, num_classes=20
 )
+```
+
+
 
 
 Running the Application
@@ -101,11 +103,3 @@ Results
 · Training Time: XX minutes
 · Key Findings: [Brief summary of results]
 
-Contributing
-
-1. Fork the repository
-2. Create a feature branch: git checkout -b feature-name
-3. Make your changes
-4. Commit changes: git commit -m 'Add feature'
-5. Push to branch: git push origin feature-name
-6. Submit a pull request
