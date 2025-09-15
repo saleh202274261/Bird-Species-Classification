@@ -2,7 +2,7 @@ Bird Species Classification
 
 Project Description
 
-This project is a deep learning application that classifies bird species from images using a convolutional neural network (CNN) based on EfficientNetB0. The application includes a user-friendly GUI that allows users to upload bird images and receive accurate species predictions with confidence scores.
+This project is a deep learning application that classifies bird species from images using a convolutional neural network (CNN) based on EfficientNetB0 with transfer learning. The application includes a user-friendly GUI that allows users to upload bird images and receive accurate species predictions with confidence scores.
 
 Key Features:
 
