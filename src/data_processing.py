@@ -10,7 +10,7 @@ class DataProcessor:
         pass
    
     def visualize_random_image(self, data_path):
-        """Display a random image from the dataset (original code)"""
+        """Display a random image from the dataset """
         fig = plt.gcf()
         fig.set_size_inches(5, 5)
        
@@ -27,7 +27,7 @@ class DataProcessor:
         return species, img_path
    
     def create_data_generators(self, data_path, img_size=(224, 224), batch_size=32):
-        """Create data generators (from original code)"""
+        """Create data generators"""
         train_path = os.path.join(data_path, 'train')
         valid_path = os.path.join(data_path, 'valid')
         test_path = os.path.join(data_path, 'test')

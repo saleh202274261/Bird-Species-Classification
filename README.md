@@ -89,8 +89,6 @@ model, history, training_time, best_accuracy = model_trainer.train_model(
 ```
 
 
-
-
 Running the Application
 
 
