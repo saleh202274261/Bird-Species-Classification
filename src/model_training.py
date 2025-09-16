@@ -48,7 +48,7 @@ class ModelTrainer:
        
         return model
    
-    def train_model(self, train_generator, validation_generator, num_classes, epochs=60):
+    def train_model(self, train_generator, validation_generator, num_classes, epochs=50):
         """Train model with best model saving"""
         model = self.build_model(num_classes)
         model = self.compile_model(model)

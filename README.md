@@ -16,9 +16,9 @@ Team Information
 
 | AC.NO        | Name                     | Role                 | Contributions |
 |--------------|--------------------------|----------------------|---------------|
-| 202274261    | [Saleh ahmed alhowat]    | Data analysis        | Data processing and preparing    |
-| 202174374    | [waleed yahya al_sharafi]| ML Engineer          |  Model architectureand training  |
-| 202073349    | [taha ahmed alqutami]    | Frontend Developer   |GUI implementation and data visulization |
+| 202274261    |   Saleh ahmed alhowat    | Data analysis        | Data processing and preparing    |
+| 202174374    |   waleed yahya al_sharafi| ML Engineer          |  Model architectureand training  |
+| 202073349    |   taha ahmed alqutami    | Frontend Developer   |GUI implementation and data visulization |
 
 
 
@@ -38,12 +38,16 @@ cd bird-species-classification
 
 uv sync
 
+2. Download the dataset (CUB_200_2011) and decompress the zibfile and run the data_split.py in the same file that the date is in. this code will divided the data into three categories train/valid/test take this file put it in the data file in the project structure. 
+3. Run the project:
 
-1. Run the project:
+1.uv run python main.py
 
-
-uv run python main.py
-
+2.Using the GUI
+1.Run application : uv run python main.py
+2.Click "chose image" to select a bird image
+3.view the top prediction with confidence scores 
+4.see model accuracy in the information pannel
 
 Project Structure
 
@@ -97,7 +101,14 @@ uv run python main.py
 
 Results
 
-· Model Accuracy: XX%
-· Training Time: XX minutes
-· Key Findings: [Brief summary of results]
+· Model Accuracy: 71%
+· Training Time: 5000 seconds
+· Key Findings: 
+- EfficientNetB0 provides excellent feature extraction for fine-grained bird classification
+- Data augmentation significantly improves model generalization
+- GlobalAveragePooling with custom dense layers outperforms traditional flattening approach
+- The model handles class imbalance well despite varying species sample sizes
+
+### Confusion Matrix
+The model shows particular strength in distinguishing between visually distinct species, with some confusion occurring between similar-looking species within the same family.
 
